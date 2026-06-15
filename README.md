@@ -30,5 +30,4 @@ $\text{Average Waiting Time} \quad WT = \frac{1}{n} \sum_{i=1}^n WT_i, \quad i=1
 
 $\text{Average Turnaround Time} \quad TT = \frac{1}{n} \sum_{i=1}^n TT_i, \quad i=1,2,\cdots,n$
 
-
-![Visualisation of process scheduling](scheduling.png "Visualisation of process scheduling)
+![Visualisation of process scheduling](scheduling.png "Visualisation of process scheduling")
