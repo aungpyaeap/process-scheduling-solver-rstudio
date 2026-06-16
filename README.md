@@ -1,6 +1,6 @@
 # Process Scheduling Solver
 
-Pyton and R code for classic CPU scheduling algorithms to compute Turnaround Time (TT) and Waiting Time (WT).
+Pyton and R code for classic CPU scheduling algorithms to compute Average Waiting Time (WT) and Average Turnaround Time (TT).
 
 ## Algorithms in repository
 - **`FCFS.R`** **`FCFS.py`**: First Come First Serve / FCFS
