@@ -1,12 +1,12 @@
 # Process Scheduling Solver
 
-Pyton and R codes for classic CPU scheduling algorithms to compute Turnaround Time (TT) and Waiting Time (WT).
+Pyton and R code for classic CPU scheduling algorithms to compute Turnaround Time (TT) and Waiting Time (WT).
 
 ## Algorithms in repository
-- First Come First Serve / FCFS
-- Shortest Job First / SJF (non-preemptive)
-- Preemptive Priority
-- Round-Robin / RR
+- **`FCFS.R`** **`FCFS.py`**: First Come First Serve / FCFS
+- **`SJF.R`** **`SJF.py`**: Shortest Job First / SJF (non-preemptive)
+- **`PREEMPTIVE-PRIORITY.R.R`** **`PP.py`**: Preemptive Priority
+- **`ROUND-ROBIN.R`** **`RR.py`**: Round-Robin / RR
 
 ## Equations
 $$\text{Start Time with different arrival time}=\max(\underbrace{ST + EXT}_{\text{previous}(i-1)} , \underbrace{AT}_{\text{current}(i)})$$
