@@ -18,25 +18,54 @@ Install them using pip:
 ```pip install numpy tabulate```
 
 ## Equations
-$$\text{Start Time with different arrival time}=\max(\underbrace{ST + EXT}_{\text{previous}(i-1)} , \underbrace{AT}_{\text{current}(i)})$$
+**Start Time with different arrival time:**
 
-$\text{Completion Time}=\text{Start Time}+\text{Execution Time}$
+Start Time = max(previous Start Time + previous Execution Time, current Arrival Time)
 
-$\text{Waiting Time}=\text{Start Time}+\text{Arrival Time}$
+---
 
-$\text{Turnaround Time}=\text{Completion Time}+\text{Arrival Time}$
+**Completion Time:**
 
-$\text{Remaining Execution Time}= \text{Execution Time}(a) – (\text{Start Time}(b) – \text{Start Time}(a))$
+Completion Time = Start Time + Execution Time
 
-Note that counting starts from remaining blocks.
+---
 
-Use
-$\text{Waiting Time} = (\text{Completion Time} – \text{Arrival Time}) – \text{Execution Time}$
+**Waiting Time (basic):**
 
-for a process with prevented blocks. Applicable for Preemptive Priority and Round-Robin.
+Waiting Time = Start Time - Arrival Time
 
-$\text{Average Waiting Time} \quad WT = \frac{1}{n} \sum_{i=1}^n WT_i, \quad i=1,2,\cdots,n$
+---
 
-$\text{Average Turnaround Time} \quad TT = \frac{1}{n} \sum_{i=1}^n TT_i, \quad i=1,2,\cdots,n$
+**Turnaround Time:**
+
+Turnaround Time = Completion Time - Arrival Time
+
+---
+
+**Remaining Execution Time:**
+
+Remaining Execution Time = Execution Time(a) - (Start Time(b) - Start Time(a))
+
+Note: Counting starts from remaining blocks.
+
+---
+
+**Waiting Time (for preemptive algorithms):**
+
+Waiting Time = (Completion Time - Arrival Time) - Execution Time
+
+Applies to: Preemptive Priority and Round-Robin
+
+---
+
+**Average Waiting Time:**
+
+Average WT = (1/n) × (WT₁ + WT₂ + ... + WTₙ)
+
+---
+
+**Average Turnaround Time:**
+
+Average TT = (1/n) × (TT₁ + TT₂ + ... + TTₙ)
 
 ![Visualisation of process scheduling](scheduling.png "Visualisation of process scheduling")
